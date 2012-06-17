@@ -12,6 +12,7 @@ require_once $mod_path . 'inc/func.inc.php';
 
 // Start tpl
 require_once $mod_path . 'tpl/top.tpl.php';
+$title = '';
 
 // Form values
 $values = array();
@@ -32,7 +33,7 @@ switch($post_action)
 			$modx->db->query($sql);
 		}
 		
-		header('Location: ' . $_SERVER['REQUEST_URI']);
+		redirect();
 		break;
 	
 	// --------------------------------------------------------------------------
@@ -71,7 +72,9 @@ switch($post_action)
 	
 	default:
 		// Not installed
-		if (mysql_num_rows(mysql_query('SHOW TABLES FROM ' . $dbase . ' LIKE "' . $mod_table[0] . '"')) == 0)
+		$query = $modx->db->query('SHOW TABLES FROM ' . $dbase . ' LIKE "' . $mod_table[0] . '"');
+
+		if ($modx->db->getRecordCount($query) == 0)
 		{
 			echo '<a href="#" onclick="post_form(\'install\', null);return false;">Установить модуль</a>';
 		}

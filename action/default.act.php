@@ -4,9 +4,8 @@
  */
 ?>
 
-<br><a href="#" onclick="post_form('base_add', null);">
-	<img align="absmiddle" src="<?= $icons_dir ?>add.png" alt="+"> Добавить
-</a>
+<img align="absmiddle" src="<?= $icons_dir ?>add.png" alt="+">
+<a href="#" onclick="post_form('base_add', null);">	Добавить</a>
 
 <br><br><table cellspacing="1" cellpadding="1" class="grid">
 

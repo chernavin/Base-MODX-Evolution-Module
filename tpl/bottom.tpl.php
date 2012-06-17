@@ -1,8 +1,15 @@
 </form>
 </div>
 
-<script>
-	document.getElementById('title').innerHTML = '<?= $title ?>';
+<script type="text/javascript">
+	var title = '<?= $title ?>',
+		titleElem = document.getElementById('title');
+
+	if (title != '') {
+		titleElem.innerHTML = title;
+	} else {
+		titleElem.parentNode.removeChild(titleElem);
+	}
 </script>
 
 </body>

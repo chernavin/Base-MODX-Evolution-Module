@@ -15,7 +15,7 @@ $dbase         = $modx->db->config['dbase'];
 $mod_path      = $base_path . 'assets/modules/base/';
 $icons_dir     = 'media/style/' . $manager_theme . '/images/icons/';
 
-$mod_name = 'Base';
+$mod_name = 'Базовый модуль';
 
 $mod_table = array(
 	$table_prefix . 'base'

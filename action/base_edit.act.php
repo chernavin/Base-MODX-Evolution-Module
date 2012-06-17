@@ -34,7 +34,7 @@ else
 {
 	// Load values from db
 	$query = $modx->db->select('*', $mod_table[0], 'id = "' . $post_item_id . '"');
-	$values = mysql_fetch_assoc($query);
+	$values = $modx->db->getRow($query);
 }
 
 $errors = implode('<br>', $errors);

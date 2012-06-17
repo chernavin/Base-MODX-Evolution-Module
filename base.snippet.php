@@ -12,8 +12,8 @@ require_once $mod_path . 'inc/func.inc.php';
 
 // Get
 $query = $modx->db->select('*', $mod_table[0],  'id = "' . $id . '"');
-$item = mysql_fetch_assoc($query);
+$item = $modx->db->getRow($query);
 
 // Echo
-echo '<b>' . $item['title'] . '</b>';
+echo '<b>' . $item['title'] . '</b><br>';
 echo $item['desc'];

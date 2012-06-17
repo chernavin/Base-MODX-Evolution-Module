@@ -21,11 +21,11 @@
 <tbody>
 
 <?php
-// List
+// Load list from db
 $query = $modx->db->select('*', $mod_table[0]);
 
 $i = 1;
-while ($row = mysql_fetch_assoc($query))
+while ($row = $modx->db->getRow($query))
 {
 	$td_class = ($i % 2 == 0) ? 'gridAltItem' : 'gridItem';
 	$i++;

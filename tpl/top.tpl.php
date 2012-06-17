@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="media/style/<?= $manager_theme ?>/style.css">
 
-		<script>
+		<script type="text/javascript">
 			function post_form(action, id) {
 				document.module.action.value=action;
 				
@@ -17,9 +17,12 @@
 		</script>
 	</head>
 
-	<body><br>
+	<body>
 
-		<div class="sectionHeader"><?= $mod_name ?></div><div class="sectionBody">
+		<h1><?= $mod_name ?></h1>
+
+		<div class="sectionHeader">Выберите действие</div>
+		<div class="sectionBody">
 		
 		<h3 id="title"></h3>
 

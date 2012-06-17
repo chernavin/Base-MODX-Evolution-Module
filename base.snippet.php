@@ -10,10 +10,23 @@
 require_once 'inc/config.inc.php';
 require_once $mod_path . 'inc/func.inc.php';
 
-// Get
-$query = $modx->db->select('*', $mod_table[0],  'id = "' . $id . '"');
-$item = $modx->db->getRow($query);
+$output = '';
 
-// Echo
-echo '<b>' . $item['title'] . '</b><br>';
-echo $item['desc'];
+// Input data
+$id = intval($id);
+$rowTpl = isset($rowTpl) ? $rowTpl : '';
+
+if ( ! empty($rowTpl))
+{
+	// Load from db
+	$query = $modx->db->select('*', $mod_table[0],  'id = "' . $id . '"');
+	$row = $modx->db->getRow($query);
+	
+	// Output
+	if ($row)
+	{
+		$output .= $modx->parseChunk($rowTpl, $row, '[+', '+]');
+	}
+}
+
+echo $output;

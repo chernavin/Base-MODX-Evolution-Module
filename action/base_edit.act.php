@@ -20,7 +20,7 @@ if (isset($_POST['send']))
 		$modx->db->update(array(
 			'`title`' => esc($_POST['title']),
 			'`desc`' => esc($_POST['desc'])
-		), $mod_table[0], 'id = "' . intval($_POST['item_id']) . '"');
+		), $mod_table[0], 'id = "' . $post_item_id . '"');
 		
 		redirect();
 		exit;
@@ -33,7 +33,7 @@ if (isset($_POST['send']))
 else
 {
 	// Load values from db
-	$query = $modx->db->select('*', $mod_table[0], 'id = "' . intval($_POST['item_id']) . '"');
+	$query = $modx->db->select('*', $mod_table[0], 'id = "' . $post_item_id . '"');
 	$values = mysql_fetch_assoc($query);
 }
 

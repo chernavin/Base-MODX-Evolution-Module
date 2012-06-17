@@ -16,8 +16,12 @@ require_once $mod_path . 'tpl/top.tpl.php';
 // Form values
 $values = array();
 
+// Input data
+$post_item_id = intval($_POST['item_id']);
+$post_action = $_POST['action'];
+
 // Action
-switch($_POST['action'])
+switch($post_action)
 {
  
 	// Install module
@@ -54,7 +58,7 @@ switch($_POST['action'])
 		break;
 		
 	case 'base_delete':
-		$modx->db->delete($mod_table[0], 'id = "' . intval($_POST['item_id']) . '"');
+		$modx->db->delete($mod_table[0], 'id = "' . $post_item_id . '"');
 		
 		redirect();
 		break;

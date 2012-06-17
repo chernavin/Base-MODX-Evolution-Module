@@ -18,8 +18,8 @@
 
 <br><br>
 
-<input type="button" value="<?= strpos($_POST['action'], '_edit') ? 'Редактировать' : 'Создать' ?>"
-	onclick="post_form('<?= $_POST['action'] ?>', '<?= isset($_POST['item_id']) ? $_POST['item_id'] : '' ?>');">
+<input type="button" value="<?= strpos($post_action, '_edit') ? 'Редактировать' : 'Создать' ?>"
+	onclick="post_form('<?= $post_action ?>', '<?= $post_item_id ? $post_item_id : '' ?>');">
 
 &nbsp;
 

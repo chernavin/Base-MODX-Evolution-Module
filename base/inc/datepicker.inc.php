@@ -12,6 +12,7 @@
 		var dpOffset = -10;
 		var dpformat = 'dd.mm.YYYY';
 		var dpdayNames = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
-		//new DatePicker($('id'), {'yearOffset': dpOffset,'format':dpformat,'dayNames':dpdayNames,'dayChars':2,'startDay':1});
+		var dpmonthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+		//new DatePicker($('id'), {'yearOffset': dpOffset,'format':dpformat,'dayNames':dpdayNames,'monthNames':dpmonthNames,'dayChars':2,'startDay':1});
 	});
 </script>

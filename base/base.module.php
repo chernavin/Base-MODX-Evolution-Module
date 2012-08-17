@@ -2,9 +2,11 @@
 /**
  * Base module
  *
- * @code 	require $modx->config['base_path'] . 'assets/modules/base/base.module.php';
+ * @code 	MODX_BASE_PATH . 'assets/modules/base/base.module.php';
  * @author	chernavin.a.a@mail.ru
  */
+
+// -----------------------------------------------------------------------------
 
 // Config, functions
 require_once 'inc/config.inc.php';
@@ -20,6 +22,8 @@ $values = array();
 // Input data
 $post_item_id = intval($_POST['item_id']);
 $post_action = $_POST['action'];
+
+// -----------------------------------------------------------------------------
 
 // Action
 switch($post_action)
@@ -85,6 +89,8 @@ switch($post_action)
     	}
 
 }
+
+// -----------------------------------------------------------------------------
 
 // End tpl
 require_once $mod_path . 'tpl/bottom.tpl.php';

@@ -8,7 +8,7 @@ Base MODX Evolution Module
 
 1. Скопировать `base` в директорию `assets/modules`
 2. Создать новый модуль через `Управление модулями` с именем `Base` и кодом
-`require $modx->config['base_path'] . 'assets/modules/base/base.module.php';`
+`require MODX_BASE_PATH . 'assets/modules/base/base.module.php';`
 3. Обновить страницу используя F5
 4. Перейти к модулю `Base` и завершить установку нажав `Установить модуль`
 
@@ -17,4 +17,4 @@ Base MODX Evolution Module
 
 1. Установить модуль
 2. Создать сниппет с именем `Base` и кодом
-`require $modx->config['base_path'] . 'assets/modules/base/base.snippet.php';`
+`require MODX_BASE_PATH . 'assets/modules/base/base.snippet.php';`

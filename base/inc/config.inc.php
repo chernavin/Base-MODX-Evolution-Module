@@ -3,16 +3,17 @@
  * Config
  */
 
+// -----------------------------------------------------------------------------
+
 // MODX
-$base_path     = $modx->config['base_path'];
-$site_url      = $modx->config['site_url'];
 $table_prefix  = $modx->db->config['table_prefix'];
 $manager_theme = $modx->config['manager_theme'];
-$emailsender   = $modx->config['emailsender'];
 $dbase         = $modx->db->config['dbase'];
 
+// -----------------------------------------------------------------------------
+
 // Module
-$mod_path      = $base_path . 'assets/modules/base/';
+$mod_path      = MODX_BASE_PATH . 'assets/modules/base/';
 $icons_dir     = 'media/style/' . $manager_theme . '/images/icons/';
 
 $mod_name = 'Базовый модуль';

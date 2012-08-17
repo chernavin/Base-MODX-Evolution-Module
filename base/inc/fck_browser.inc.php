@@ -21,13 +21,13 @@ function BrowseServer(ctrl) {
 lastImageCtrl = ctrl;
 var w = screen.width * 0.7;
 var h = screen.height * 0.7;
-OpenServerBrowser('/manager/media/browser/mcpuk/browser.html?Type=images&Connector=/manager/media/browser/mcpuk/connectors/php/connector.php&ServerPath=/', w, h);
+OpenServerBrowser('<?= MODX_BASE_URL ?>manager/media/browser/mcpuk/browser.html?Type=images&Connector=/manager/media/browser/mcpuk/connectors/php/connector.php&ServerPath=/', w, h);
 }
 function BrowseFileServer(ctrl) {
 lastFileCtrl = ctrl;
 var w = screen.width * 0.7;
 var h = screen.height * 0.7;
-OpenServerBrowser('/manager/media/browser/mcpuk/browser.html?Type=files&Connector=/manager/media/browser/mcpuk/connectors/php/connector.php&ServerPath=/', w, h);
+OpenServerBrowser('<?= MODX_BASE_URL ?>manager/media/browser/mcpuk/browser.html?Type=files&Connector=/manager/media/browser/mcpuk/connectors/php/connector.php&ServerPath=/', w, h);
 }
 function SetUrl(url, width, height, alt){
 if(lastFileCtrl) {

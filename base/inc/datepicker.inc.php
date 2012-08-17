@@ -4,8 +4,8 @@
  */
 ?>
 
-<script src="/manager/media/script/mootools/mootools.js" type="text/javascript" ></script>
-<script src="/manager/media/calendar/datepicker.js" type="text/javascript"></script>
+<script src="<?= MODX_BASE_URL ?>manager/media/script/mootools/mootools.js" type="text/javascript" ></script>
+<script src="<?= MODX_BASE_URL ?>manager/media/calendar/datepicker.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 	window.addEvent('domready', function(){

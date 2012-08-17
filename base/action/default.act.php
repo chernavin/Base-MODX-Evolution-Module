@@ -2,6 +2,9 @@
 /**
  * Default action
  */
+
+// -----------------------------------------------------------------------------
+
 ?>
 
 <img align="absmiddle" src="<?= $icons_dir ?>add.png" alt="+">
@@ -20,6 +23,9 @@
 <tbody>
 
 <?php
+
+// -----------------------------------------------------------------------------
+
 // Load list from db
 $query = $modx->db->select('*', $mod_table[0]);
 
@@ -30,6 +36,7 @@ while ($row = $modx->db->getRow($query))
 	$i++;
 
 ?>
+
 	<tr>
 	<td class="<?= $td_class ?>"><?= $row['id'] ?></td>
 	<td class="<?= $td_class ?>"><?= $row['title'] ?></td>
@@ -44,9 +51,13 @@ while ($row = $modx->db->getRow($query))
 		</a>
 	</td>
 	</tr>
-<?php
 
+<?php
 }
+
+// -----------------------------------------------------------------------------
+
 ?>
+
 </tbody>
 </table>

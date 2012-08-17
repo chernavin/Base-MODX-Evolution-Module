@@ -2,6 +2,8 @@
 /**
  * Datepicker
  */
+
+// -----------------------------------------------------------------------------
 ?>
 
 <script src="<?= MODX_BASE_URL ?>manager/media/script/mootools/mootools.js" type="text/javascript" ></script>

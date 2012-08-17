@@ -2,6 +2,8 @@
 /**
  * TinyMCE
  */
+
+// -----------------------------------------------------------------------------
 ?>
 
 <script type="text/javascript" src="<?= MODX_BASE_URL ?>assets/plugins/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>

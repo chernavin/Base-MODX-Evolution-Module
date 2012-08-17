@@ -40,6 +40,13 @@ switch($post_action)
 		redirect();
 		break;
 	
+	// Reset, clear post
+	case 'reset':
+		
+		$action = ! empty($_POST['item_id']) ? strval($_POST['item_id']) : NULL;
+		redirect($action);
+		break;
+	
 	// --------------------------------------------------------------------------
 	
 	/**

@@ -39,6 +39,8 @@ else
 	$values = $modx->db->getRow($query);
 }
 
+// -----------------------------------------------------------------------------
+
 $errors = implode('<br>', $errors);
 
 // Load form

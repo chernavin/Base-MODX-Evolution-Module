@@ -2,7 +2,7 @@
 /**
  * Base snippet
  *
- * @code 	MODX_BASE_PATH . 'assets/modules/base/base.snippet.php';
+ * @code 	require MODX_BASE_PATH . 'assets/modules/base/base.snippet.php';
  * @author	chernavin.a.a@mail.ru
  */
 

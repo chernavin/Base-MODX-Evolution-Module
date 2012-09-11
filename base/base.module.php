@@ -2,7 +2,7 @@
 /**
  * Base module
  *
- * @code 	MODX_BASE_PATH . 'assets/modules/base/base.module.php';
+ * @code 	require MODX_BASE_PATH . 'assets/modules/base/base.module.php';
  * @author	chernavin.a.a@mail.ru
  */
 
